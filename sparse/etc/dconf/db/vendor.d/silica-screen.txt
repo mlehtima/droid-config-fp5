@@ -1,0 +1,4 @@
+[desktop/sailfish/silica]
+cutouts = [[568, 0, 88, 103]]
+rounded_corners = [[120, 120, 120], [-120, 120, 120], [120, -120, 120], [-120, -120, 120]]
+size_category='medium'

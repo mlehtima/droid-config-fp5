@@ -1,0 +1,19 @@
+CPUCHECK_STRING="Qualcomm Technologies, Inc. Yupik IOT IDP + PM7250B"
+
+# Because of flash-partition checks, 1 needs to be defined
+# Others can go with partition numbers
+PART_1="boot_a"
+PART_36="boot_b"
+PART_15="dtbo_a"
+PART_40="dtbo_b"
+PART_22="vendor_boot_a"
+PART_47="vendor_boot_b"
+
+PART_REAL_1="sde11"
+PART_REAL_36="sde36"
+PART_REAL_15="sde15"
+PART_REAL_40="sde40"
+PART_REAL_22="sde22"
+PART_REAL_47="sde47"
+
+PART_I="1 36 15 40 22 47"

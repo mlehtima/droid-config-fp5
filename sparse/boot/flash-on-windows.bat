@@ -94,8 +94,8 @@ exit /b 1
 set fastbootcmd=%fastbootcmd_no_device% -s %products%
 
 :: Check that device has been unlocked
-@call :getvar secure
-findstr /R /C:"secure: no" %tmpflashfile% >NUL 2>NUL
+@call :getvar unlocked
+findstr /R /C:"unlocked: yes" %tmpflashfile% >NUL 2>NUL
 if not errorlevel 1 GOTO no_error_unlock
 echo(
 echo This device has not been unlocked for the flashing. Please follow the

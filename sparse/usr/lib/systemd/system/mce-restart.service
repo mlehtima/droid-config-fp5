@@ -1,0 +1,12 @@
+[Unit]
+Description=MCE restart hack
+After=droid-hal-init.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=/bin/sh -c "while [ ! -f /sys/class/qcom-battery/charging_enabled ]; do sleep 1; done"
+ExecStart=/usr/bin/systemctl restart mce.service
+
+[Install]
+WantedBy=graphical.target

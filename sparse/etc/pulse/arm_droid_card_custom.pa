@@ -1,2 +1,2 @@
-load-module module-droid-card sink_format=s24le rate=48000
+load-module module-droid-card sink_format=s24le rate=48000 unload_call_exit=true
 load-module module-udev-detect
